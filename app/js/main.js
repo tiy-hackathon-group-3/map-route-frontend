@@ -8,7 +8,7 @@
     URL: 'https://nameless-forest-6621.herokuapp.com/',
     CONFIG: {
       headers: {
-
+      'Access-Token' : ''
       }
     }
 
@@ -34,14 +34,24 @@
     })
 
     .when('/addDest', {
-      templateUrl: 'js/rProvider/destination/destination.tpl.html',
-      controller: 'Destination'
+      templateUrl: 'js/rProvider/trip/trip.tpl.html',
+      controller: 'Trip'
     })
+    // .when('/addAddress', {
+    //   templateUrl: '',
+    //   controller: ''
+    // })
 
     .when('/mapDest', {
-      templateUrl: 'js/rPRovider/map/mapped.tpl.html',
+      templateUrl: 'js/rProvider/map/mapped.tpl.html',
       controler: 'Mapped'
     });
+
+
+  //   .when('/createTrip',{
+  //      templateUrl: 'js/rProvider/trip/trip.controller.js',
+  //      controller: 'createTrip'
+  // });
 
   });
 
