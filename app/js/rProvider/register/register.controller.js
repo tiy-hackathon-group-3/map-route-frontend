@@ -15,7 +15,7 @@
       };
 
       $scope.registration =function (data) {
-        $http.post(HEROKU.URL + 'users/register', data)
+        $http.post(HEROKU.URL + 'users/register', data);
         // .success( function (){
           // run after promise
         // });

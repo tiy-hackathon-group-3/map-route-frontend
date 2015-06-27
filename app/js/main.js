@@ -19,7 +19,7 @@
 
     .when('/', {
       templateUrl: 'js/rProvider/dashboard/dashboard.tpl.html',
-      controler: 'Home'
+      controller: 'Home'
     })
 
     .when('/login', {
