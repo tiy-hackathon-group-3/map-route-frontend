@@ -4,10 +4,11 @@
 
   angular.module('rProvider')
 
-  .controller('Dashboard', ['$scope',
+  .controller('Dashboard', ['$scope', function ($scope){
 
-    function ($scope){
+  	//Adding a function for the map route
 
+  	
 
 
     }
