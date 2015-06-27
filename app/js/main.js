@@ -9,9 +9,9 @@
     CONFIG: {
       headers: {
 
-        'Access-Token' : 'userToken'
+        'Access-Token' : 'e5c8ae43e7af945f1f27417a9709416d'
 
-           }
+      }
     }
 
   })

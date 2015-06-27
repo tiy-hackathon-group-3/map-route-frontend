@@ -4,20 +4,20 @@
 
   angular.module('rProvider')
 
-  .controller('Trip', ['$scope', '$http', '$location', 'HEROKU',
+  .controller('Trip', ['$scope', '$http', '$location', 'HEROKU', 'UserService',
 
-    function ($scope, $http, $location, HEROKU) {
+    function ($scope, $http, $location, HEROKU, UserService) {
 
       // var Trip = function (options){
       //   this.title = options.title;
 
       // };
 
-      $scope.tripTitle =function (t) {
-        $http.post(HEROKU.URL + 'trips', t, HEROKU.CONFIG);
-        // .success( function (){
-          // $location.path('/trips/:trip_id/locations')
-        // });
+      $scope.tripTitle = function (t) {
+        $http.post(HEROKU.URL + 'trips/', t, HEROKU.CONFIG)
+        .success( function (){
+          $location.path('/trips/:trip_id/locations');
+        });
 
       };
 

@@ -4,8 +4,8 @@
 
   angular.module('rProvider')
 
-  .controller('Mapped', ['$scope',
-    function ($scope) {
+  .controller('Mapped', ['$scope', 'UserService',
+    function ($scope, UserService) {
 
       console.log('Hello from Map Controller');
 

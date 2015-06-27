@@ -8,12 +8,16 @@
 
     function ($location) {
 
-      var userToken = function (token){
-        Cookies.set('Access-Token', token.access_token);
-        Cookies.set('username', token.username);
+      var userToken = function (){
+
+    // Cookies.get('username');
+    Cookies.get('Access-Token');
+
+      //   Cookies.get('Access-Token', token.access_token);
+      //   Cookies.get('username', token.username);
 
       };
-      console.log(userToken);
+      // console.log(userToken);
     }
 
   ]);
