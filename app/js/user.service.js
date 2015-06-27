@@ -4,20 +4,24 @@
 
   angular.module('rProvider')
 
-  .service('UserService', [ '$location',
+  .service('UserService', [ '$location', 'HEROKU',
 
-    function ($location) {
+    function ($location, HEROKU) {
 
-      var userToken = function (){
+      this.tokenizeHeader = function (){
+        console.log('s');
 
-    // Cookies.get('username');
-    Cookies.get('Access-Token');
+        var token = Cookies.get('Access-Token');
 
-      //   Cookies.get('Access-Token', token.access_token);
-      //   Cookies.get('username', token.username);
+        if (token) {
+          HEROKU.CONFIG.headers['Access-Token'] = token;
+        } else {
+        $location.path('/login');
+        console.log('Hello from User Service');
+        }
 
       };
-      // console.log(userToken);
+
     }
 
   ]);

@@ -9,7 +9,7 @@
     CONFIG: {
       headers: {
 
-        'Access-Token' : 'e5c8ae43e7af945f1f27417a9709416d'
+        'Access-Token' : ''
 
       }
     }
@@ -39,10 +39,7 @@
       templateUrl: 'js/rProvider/trip/trip.tpl.html',
       controller: 'Trip'
     })
-    // .when('/addAddress', {
-    //   templateUrl: '',
-    //   controller: ''
-    // })
+
 
     .when('/mapDest', {
 
@@ -52,15 +49,14 @@
     });
 
 
-  //   .when('/createTrip',{
-  //      templateUrl: 'js/rProvider/trip/trip.controller.js',
-  //      controller: 'createTrip'
-  // });
+
 
   });
 
 
 }());
 
+// re-inject if angular-google-maps is the map answer
+// 'uiGmapgoogle-maps'
 
 

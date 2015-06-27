@@ -4,9 +4,11 @@
 
   angular.module('rProvider')
 
-  .controller('Destination', ['$scope', '$http', 'HEROKU',
+  .controller('Destination', ['$scope', '$http', 'HEROKU', 'UserService',
 
-    function ($scope, $http, HEROKU) {
+    function ($scope, $http, HEROKU, UserService) {
+
+      UserService.tokenizeHeader();
 
       var Destination = function (options){
         this.street = options.street;

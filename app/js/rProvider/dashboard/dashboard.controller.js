@@ -4,13 +4,12 @@
 
   angular.module('rProvider')
 
-  .controller('Dashboard', ['$scope', '$http', 'HEROKU', function ($scope, $http, HEROKU){
-
-  	//Display Username on dashboard
-
-  	$scope.user = Cookies.get('username');
+  .controller('Dashboard', ['$scope', 'UserService', '$http', 'HEROKU',
 
 
+    function ($scope, UserService, $http, HEROKU ){
+
+    UserService.tokenizeHeader();
 
   	//Creating function and Method for retrieving and pushing routes to dash
 
@@ -26,8 +25,10 @@
   			console.error(err);
   		});
 
+  	//Display Username on dashboard
 
 
+    	$scope.user = Cookies.get('username');
 
     }
 
