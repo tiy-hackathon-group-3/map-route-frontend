@@ -10,6 +10,12 @@
 
   	$scope.user = Cookies.get('username');
 
+  	//Creating function and Method for retrieving and pushing routes to dash
+
+  
+
+
+
 
 
 
