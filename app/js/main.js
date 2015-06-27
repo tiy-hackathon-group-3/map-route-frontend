@@ -40,7 +40,7 @@
 
     .when('/mapDest', {
       templateUrl: 'js/rPRovider/map/mapped.tpl.html',
-      controler: 'Mapped'
+      controller: 'Mapped'
     });
 
   });
