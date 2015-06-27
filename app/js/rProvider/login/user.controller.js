@@ -4,12 +4,12 @@
 
   angular.module('rProvider')
 
-  .controller('User', ['$scope', '$http',
+  .controller('User', ['$scope', '$http', 'HEROKU',
 
-    function ($scope, $http){
+    function ($scope, $http, HEROKU){
 
-      var url = 'https://nameless-forest-6621.herokuapp.com/',
-      config = {header: ''};
+      // var url = 'https://nameless-forest-6621.herokuapp.com/',
+      // config = {header: ''};
 
       var User = function (options){
         this.username = options.username;
@@ -18,7 +18,7 @@
 
       //
       $scope.login = function (data) {
-        $http.post(url + 'users/login', data);
+        $http.post(HEROKU.URL + 'users/login', data);
         // .success( function (data){
         //   console.log(data);
         };

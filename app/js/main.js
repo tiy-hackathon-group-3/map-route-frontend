@@ -4,6 +4,16 @@
 
   angular.module('rProvider', ['ngRoute', 'uiGmapgoogle-maps'])
 
+  .constant('HEROKU', {
+    URL: 'https://nameless-forest-6621.herokuapp.com/',
+    CONFIG: {
+      headers: {
+
+      }
+    }
+
+  })
+
   .config(function ($routeProvider) {
     $routeProvider
 
