@@ -6,9 +6,9 @@
 
   .controller('Dashboard', ['$scope', function ($scope){
 
-  	//Creating user authentication idenitfyer
+  	//Display Username on dashboard
 
-  	$scope.user = "Bobby";
+  	$scope.user = Cookies.get('username');
 
 
 
