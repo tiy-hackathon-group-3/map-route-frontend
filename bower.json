@@ -22,7 +22,8 @@
     "angular": "~1.4.1",
     "foundation": "~5.5.2",
     "angular-route": "~1.4.1",
-    "angular-google-maps": "~2.1.5"
+    "angular-google-maps": "~2.1.5",
+    "cookies-js": "~1.2.1"
   },
   "devDependencies": {
     "mocha": "~2.2.5",
