@@ -13,7 +13,7 @@
 
       var User = function (options){
         this.username = options.username;
-        this.passwoord = options.password;
+        this.password = options.password;
       };
 
       //
