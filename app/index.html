@@ -9,6 +9,14 @@
 </head>
 <body ng-app="rProvider">
 
+  <nav>
+    <a href="#/">Home |</a>
+    <a href="#/login">Login |</a>
+    <a href="#/register">Register |</a>
+    <a href="#/addDest">Create a Trip |</a>
+    <a href="#/mapDest">Map</a>
+  </nav>
+
   <div class="container">
     <ng-view></ng-view>
   </div>
@@ -20,13 +28,19 @@
   <script src="js/vendor/underscore.js"></script>
   <script src="js/vendor/angular.js"></script>
   <script src="js/vendor/angular-route.js"></script>
+  <script src="js/vendor/cookies.js"></script>
   <script src="js/vendor/lodash.js"></script>
   <script src="js/vendor/angular-google-maps.js"></script>
 
   <!-- MAIN -->
   <script src="js/main.js"></script>
+  <script src="user.service.js"></script>
   <script src="js/rProvider/login/user.controller.js"></script>
   <script src="js/rProvider/register/register.controller.js"></script>
+  <script src="js/rProvider/dashboard/dashboard.controller.js"></script>
+  <script src="js/rProvider/map/mapped.controller.js" ></script>
+
+
 
 </body>
 </html>
