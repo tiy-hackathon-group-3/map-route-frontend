@@ -1,6 +1,11 @@
 ## Welcome to My Angular Project
 
-> I am your Readme.md file, you should probably update me.
+This project utilizes the the following Angular Directives:
+
+- Angular-Google-Maps
+- Angular-Routes
+
+Please be sure to run `bower install` and `npm install` to be sure that all dependecies are installed into the project.
 
 
 ## Usage

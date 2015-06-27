@@ -7,24 +7,26 @@
   <link rel="stylesheet" href="css/vendor/foundation.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body ng-app="rProvider">
 
   <div class="container">
-
+    <ng-view></ng-view>
   </div>
 
-  <script src='//maps.googleapis.com/maps/api/js?sensor=false'></script>
+  <script src="//maps.googleapis.com/maps/api/js?sensor=false"></script>
 
   <!-- VENDOR -->
   <script src="js/vendor/jquery.js"></script>
   <script src="js/vendor/underscore.js"></script>
   <script src="js/vendor/angular.js"></script>
   <script src="js/vendor/angular-route.js"></script>
-  <script src='js/vendor/lodash.js'></script>
-  <script src='js/vendor/angular-google-maps.js'></script>
+  <script src="js/vendor/lodash.js"></script>
+  <script src="js/vendor/angular-google-maps.js"></script>
 
   <!-- MAIN -->
   <script src="js/main.js"></script>
+  <script src="js/rProvider/login/user.controller.js"></script>
+  <script src="js/rProvider/register/register.controller.js"></script>
 
 </body>
 </html>
