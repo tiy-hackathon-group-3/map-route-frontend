@@ -9,7 +9,7 @@
     CONFIG: {
       headers: {
 
-        'Access-Token' : 'e5c8ae43e7af945f1f27417a9709416d'
+        'Access-Token' : ''
 
       }
     }
@@ -62,5 +62,7 @@
 
 }());
 
+// re-inject if angular-google-maps is the map answer
+// 'uiGmapgoogle-maps'
 
 

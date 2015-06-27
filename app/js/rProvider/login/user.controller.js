@@ -4,12 +4,13 @@
 
   angular.module('rProvider')
 
-  .controller('User', ['$scope', '$http', 'HEROKU', '$location',
+  .controller('User', ['$scope', '$http', 'HEROKU', '$location','UserService',
 
-    function ($scope, $http, HEROKU, $location){
+    function ($scope, $http, HEROKU, $location, UserService){
 
       // var url = 'https://nameless-forest-6621.herokuapp.com/',
       // config = {header: ''};
+
 
       var User = function (options){
         this.username = options.username;
@@ -23,6 +24,7 @@
 
           Cookies.set('Access-Token', data.access_token);
           Cookies.set('username', data.username);
+
           $location.path('/');
 
           $scope.user = {};

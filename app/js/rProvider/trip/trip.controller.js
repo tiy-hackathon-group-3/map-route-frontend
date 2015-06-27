@@ -12,6 +12,7 @@
       //   this.title = options.title;
 
       // };
+      UserService.tokenizeHeader();
 
       $scope.tripTitle = function (t) {
         $http.post(HEROKU.URL + 'trips/', t, HEROKU.CONFIG)
