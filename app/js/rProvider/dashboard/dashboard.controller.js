@@ -6,9 +6,13 @@
 
   .controller('Dashboard', ['$scope', function ($scope){
 
-  	//Adding a function for the map route
+  	//Creating user authentication idenitfyer
 
-  	
+  	$scope.user = "Bobby";
+
+
+
+
 
 
     }
