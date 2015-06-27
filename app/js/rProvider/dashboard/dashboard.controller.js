@@ -4,9 +4,14 @@
 
   angular.module('rProvider')
 
-  .controller('Dashboard', ['$scope',
+  .controller('Dashboard', ['$scope', function ($scope){
 
-    function ($scope){
+  	//Display Username on dashboard
+
+  	$scope.user = Cookies.get('username');
+
+
+
 
 
 

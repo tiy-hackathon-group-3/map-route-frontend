@@ -4,6 +4,7 @@ This project utilizes the the following Angular Directives:
 
 - Angular-Google-Maps
 - Angular-Routes
+- Cookies.js
 
 Please be sure to run `bower install` and `npm install` to be sure that all dependecies are installed into the project.
 

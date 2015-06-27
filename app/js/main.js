@@ -8,7 +8,7 @@
     URL: 'https://nameless-forest-6621.herokuapp.com/',
     CONFIG: {
       headers: {
-
+        'Access-Token' : 'userToken'
       }
     }
 
@@ -40,7 +40,7 @@
 
     .when('/mapDest', {
       templateUrl: 'js/rPRovider/map/mapped.tpl.html',
-      controler: 'Mapped'
+      controller: 'Mapped'
     });
 
   });
