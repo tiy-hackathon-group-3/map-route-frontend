@@ -20,10 +20,10 @@
       $scope.login = function (data) {
         $http.post(HEROKU.URL + 'users/login', data);
         // .success( function (data){
-        //   console.log(data);
-        };
+        //   run after promise
+        // });
 
-
+      };
 
     }
 

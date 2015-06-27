@@ -4,9 +4,9 @@
 
   angular.module('rProvider')
 
-  .controller('Register', ['$scope', '$http',
+  .controller('Register', ['$scope', '$http', 'HEROKU',
 
-    function ($scope, $http) {
+    function ($scope, $http, HEROKU) {
 
       var Register = function (options){
         this.email = options.email;
@@ -15,8 +15,13 @@
       };
 
       $scope.registration =function (data) {
-        $http.post(HEROKU.URL + 'users/register', data);
+        $http.post(HEROKU.URL + 'users/register', data)
+        // .success( function (){
+          // run after promise
+        // });
+
       };
+
     }
 
   ]);
