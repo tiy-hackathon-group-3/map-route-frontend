@@ -19,7 +19,7 @@
 
     .when('/', {
       templateUrl: 'js/rProvider/dashboard/dashboard.tpl.html',
-      controller: 'Home'
+      controller: 'Dashboard'
     })
 
     .when('/login', {
@@ -48,7 +48,5 @@
 
 }());
 
-//save to inject into map view:
 
-// <ui-gmap-google-map center='map.center' zoom='map.zoom'></ui-gmap-google-map>
 
