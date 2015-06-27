@@ -2,8 +2,12 @@
 
  <h3>Your Trips</h3>
 	<ul>
-		<li>{{ Test }}</li>
+		<li ng-repeat="trip in trips"> {{ trip.title }}</li>
 	</ul>
+
+	<div>
+		{{trips}}
+	</div>
 
 <hr />
 
