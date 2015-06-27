@@ -7,11 +7,31 @@
   .config(function ($routeProvider) {
     $routeProvider
 
+    .when('/', {
+      templateUrl: 'js/rProvider/dashboard.tpl.html',
+      controler: 'Home'
+    })
+
     .when('/login', {
       templateUrl: 'js/rProvider/login.tpl.html',
       controller: 'User'
     })
-    .otherwise('/login');
+    // .otherwise('/login');
+
+    .when('/register', {
+      templateUrl: 'js/rProvider/register.tpl.html',
+      controller: 'Register'
+    })
+
+    .when('/addDest', {
+      templateUrl: 'js/rProvider/destination.tpl.html',
+      controller: 'Destination'
+    })
+
+    .when('/mapDest', {
+      templateUrl: 'js/rPRovider/mapped.tpl.html',
+      controler: 'Mapped'
+    });
 
   });
 

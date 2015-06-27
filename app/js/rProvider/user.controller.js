@@ -8,15 +8,13 @@
 
     function ($scope, $http){
 
-       console.log('hi');
-
       var url = 'https://nameless-forest-6621.herokuapp.com/',
       config = {header: ''};
 
-      // var User = function (options){
-      //   this.name = options.name;
-      //   this.pass = options.pass;
-      // }
+      var User = function (options){
+        this.username = options.username;
+        this.passwoord = options.password;
+      };
 
       //
       $scope.login = function (data) {
