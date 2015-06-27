@@ -24,7 +24,9 @@
           Cookies.set('Access-Token', data.access_token);
           Cookies.set('username', data.username);
           $location.path('/');
+
           $scope.user = {};
+
         });
 
       };

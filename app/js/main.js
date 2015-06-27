@@ -8,7 +8,7 @@
     URL: 'https://nameless-forest-6621.herokuapp.com/',
     CONFIG: {
       headers: {
-
+        'Access-Token' : 'userToken'
       }
     }
 

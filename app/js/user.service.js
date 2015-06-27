@@ -4,12 +4,16 @@
 
   angular.module('rProvider')
 
-  .service('UserService', [
+  .service('UserService', [ '$location',
 
-    function (){
+    function ($location) {
 
+      var userToken = function (token){
+        Cookies.set('Access-Token', token.access_token);
+        Cookies.set('username', token.username);
 
-
+      };
+      console.log(userToken);
     }
 
   ]);
