@@ -4,16 +4,15 @@
 
   angular.module('rProvider')
 
-  .controller('Dashboard', ['$scope', function ($scope){
+  .controller('Dashboard', ['$scope', 'UserService',
+
+    function ($scope, UserService){
 
   	//Display Username on dashboard
 
-  	$scope.user = Cookies.get('username');
+      UserService.tokenizeHeader();
 
-
-
-
-
+    	$scope.user = Cookies.get('username');
 
     }
 

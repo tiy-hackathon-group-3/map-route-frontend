@@ -39,10 +39,7 @@
       templateUrl: 'js/rProvider/trip/trip.tpl.html',
       controller: 'Trip'
     })
-    // .when('/addAddress', {
-    //   templateUrl: '',
-    //   controller: ''
-    // })
+
 
     .when('/mapDest', {
 
@@ -52,10 +49,7 @@
     });
 
 
-  //   .when('/createTrip',{
-  //      templateUrl: 'js/rProvider/trip/trip.controller.js',
-  //      controller: 'createTrip'
-  // });
+
 
   });
 

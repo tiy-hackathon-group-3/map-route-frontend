@@ -4,9 +4,9 @@
 
   angular.module('rProvider')
 
-  .controller('Register', ['$scope', '$http', 'HEROKU', '$location', 'UserService',
+  .controller('Register', ['$scope', '$http', 'HEROKU', '$location',
 
-    function ($scope, $http, HEROKU, $location, UserService) {
+    function ($scope, $http, HEROKU, $location) {
 
       var Register = function (options){
         this.email = options.email;

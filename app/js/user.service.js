@@ -8,11 +8,16 @@
 
     function ($location, HEROKU) {
 
-      var tokenizeHeader = function (){
+      this.tokenizeHeader = function (){
+        console.log('s');
 
         var token = Cookies.get('Access-Token');
+
         if (token) {
           HEROKU.CONFIG.headers['Access-Token'] = token;
+        } else {
+        $location.path('/login');
+        console.log('Hello from User Service');
         }
 
         $location.path('/login');
