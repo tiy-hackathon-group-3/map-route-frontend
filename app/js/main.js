@@ -8,28 +8,28 @@
     $routeProvider
 
     .when('/', {
-      templateUrl: 'js/rProvider/dashboard.tpl.html',
+      templateUrl: 'js/rProvider/dashboard/dashboard.tpl.html',
       controler: 'Home'
     })
 
     .when('/login', {
-      templateUrl: 'js/rProvider/login.tpl.html',
+      templateUrl: 'js/rProvider/login/login.tpl.html',
       controller: 'User'
     })
     // .otherwise('/login');
 
     .when('/register', {
-      templateUrl: 'js/rProvider/register.tpl.html',
+      templateUrl: 'js/rProvider/register/register.tpl.html',
       controller: 'Register'
     })
 
     .when('/addDest', {
-      templateUrl: 'js/rProvider/destination.tpl.html',
+      templateUrl: 'js/rProvider/destination/destination.tpl.html',
       controller: 'Destination'
     })
 
     .when('/mapDest', {
-      templateUrl: 'js/rPRovider/mapped.tpl.html',
+      templateUrl: 'js/rPRovider/map/mapped.tpl.html',
       controler: 'Mapped'
     });
 
