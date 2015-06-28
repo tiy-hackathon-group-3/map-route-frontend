@@ -19,10 +19,10 @@
       };
 
       $scope.destination =function (data) {
-        $http.post(HEROKU.URL + 'trips/:trip_id/locations', data);
-        // .success( function (){
-          // run after promise
-        // });
+        $http.post(HEROKU.URL + 'trips/:trip_id/locations', data)
+        .success( function (){
+          $scope.destination = {};
+        });
 
       };
 
