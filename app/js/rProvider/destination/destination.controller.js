@@ -23,7 +23,9 @@
       $scope.destination =function (data) {
         $http.post(idfinder, data, HEROKU.CONFIG)
         .success( function (){
+          console.log('Posted Successfully')
           $scope.destination = {};
+          e.log.reset();
         });
 
       };
