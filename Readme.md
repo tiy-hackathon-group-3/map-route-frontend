@@ -3,6 +3,7 @@
 This project utilizes the the following Angular Directives:
 
 - Our Map is awesomely provided by Leaflet and Mapbox
+- Route painting by Leaflet-Routing-Machine
 - Angular-Routes
 - Cookies.js
 
