@@ -46,6 +46,14 @@
       templateUrl: 'js/rPRovider/map/mapped.tpl.html',
       controller: 'Mapped'
 
+    })
+
+
+    .when('/trips', {
+
+      templateUrl: 'js/rProvider/destination/destination.tpl.html',
+      controller: 'Destination'
+
     });
 
 

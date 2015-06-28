@@ -2,7 +2,7 @@
 
  <h3>Your Trips</h3>
 	<ul>
-		<li ng-repeat="trip in trips"> {{ trip.title }}</li>
+		<li ng-repeat="trip in trips"><a href="#/trips/{{ trip.id }}/locations"> {{ trip.title }} </a></li>
 	</ul>
 
 	
