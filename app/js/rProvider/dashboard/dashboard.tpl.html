@@ -1,10 +1,17 @@
-<h2>Welcome Back {{ user }}</h2>
-
- <h3>Your Trips</h3>
-	<ul>
-		<li ng-repeat="trip in trips"> {{ trip.title }}</li>
+<h2 class="DBh2">Welcome Back, {{ user }}!</h2>
+<hr />
+ <h3 class="DBh3">Your Trips:</h3>
+ <div class="DBListCont">
+	<ul class="DBul">
+		<li ng-repeat="trip in trips" class="DBli"><a href="#/trips/{{ trip.id }}/locations"> {{ trip.title }} </a></li>
 	</ul>
+</div>
 
+<div class="DBimgContainer">
+	
+	<img src="googlemap.jpg" class="DBImg">
+
+</div>
 	
 
 <hr />
