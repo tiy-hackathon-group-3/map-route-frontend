@@ -22,6 +22,8 @@
 
       };
 
+      console.log(HEROKU.URL + 'trips/:trip_id/locations');
+
     }
 
   ]);
