@@ -9,7 +9,6 @@
     function ($location, HEROKU) {
 
       this.tokenizeHeader = function (){
-        console.log('s');
 
         var token = Cookies.get('Access-Token');
 

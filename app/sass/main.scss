@@ -3,12 +3,14 @@
   margin: 20px auto;
 }
 
-.angular-google-map-container {
+#map {
   height: 400px;
 }
 
-// Dashboard Styles
+ul {
 
-// #map {
-//   height: 400px;
-// }
+  li {
+    list-style-type: none;
+  }
+
+}

@@ -2,7 +2,7 @@
 
   'use strict';
 
-  angular.module('rProvider', ['ngRoute', 'uiGmapgoogle-maps'])
+  angular.module('rProvider', ['ngRoute'])
 
   .constant('HEROKU', {
     URL: 'https://nameless-forest-6621.herokuapp.com/',
