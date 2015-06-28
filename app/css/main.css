@@ -4,3 +4,32 @@
 
 .angular-google-map-container {
   height: 400px; }
+
+.DBh2 {
+  text-align: center;
+  font-size: 3.5em;
+  text-decoration: underline; }
+
+.DBh3 {
+  font-size: 1.5em; }
+
+.DBListCont {
+  width: 150px; }
+
+.DBul {
+  padding-left: 5%;
+  display: inline;
+  float: left; }
+
+.DBli:hover {
+  font-size: 1.5em;
+  cursor: pointer; }
+
+.DBimgContainer {
+  float: right;
+  margin-bottom: 15px;
+  border: 1px solid #d6d6d6;
+  border-radius: 2.5%; }
+
+.DBImg {
+  border-radius: 2.5%; }

@@ -30,16 +30,16 @@
 
       //Delete a trip
 
-      this.deleteTrip = function(whichTrip){
-        var deleted = 'https://nameless-forest-6621.herokuapp.com/trips' + whichTrip.id;
-        return $http.delete(deleted, 'https://nameless-forest-6621.herokuapp.com/trips')
-      };
+      // this.deleteTrip = function(whichTrip){
+      //   var deleted = 'https://nameless-forest-6621.herokuapp.com/trips' + whichTrip.id;
+      //   return $http.delete(deleted, 'https://nameless-forest-6621.herokuapp.com/trips')
+      // };
 
-      $scope.deleteTheTrip = function (whichTrip){
-        UserService.deleteTrip.(whichTrip).success( function (){
-          $scope.
-        });
-      };
+      // $scope.deleteTheTrip = function (whichTrip){
+      //   UserService.deleteTrip.(whichTrip).success( function (){
+      //     $scope.
+      //   });
+      // };
 
     }
 
