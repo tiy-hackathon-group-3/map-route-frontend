@@ -2,7 +2,7 @@
 
 This project utilizes the the following Angular Directives:
 
-- Angular-Google-Maps
+- Our Map is awesomely provided by Leaflet and Mapbox
 - Angular-Routes
 - Cookies.js
 

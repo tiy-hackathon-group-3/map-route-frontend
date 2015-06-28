@@ -1,3 +1,15 @@
 <h3>Here's your Fastest Trip:</h3>
 
      <div id="map"></div>
+
+<div ng-repeat="place in list">
+  <ul>
+    <li>{{place.name}}</li>
+    <li>{{place.street}}</li>
+    <li>{{place.city}}</li>
+    <li>{{place.state}}</li>
+    <li>{{place.zipcode}}</li>
+  </ul>
+
+
+</div>
