@@ -1,3 +1,14 @@
+nav {
+  background-color: #115DA9;
+  height: 90px; }
+  nav a {
+    color: white; }
+  nav :hover {
+    color: #3D3D3A; }
+
+.leftNav {
+  padding-left: 5%; }
+
 .container {
   width: 75%;
   margin: 20px auto; }
@@ -8,7 +19,9 @@
 .DBh2 {
   text-align: center;
   font-size: 3.5em;
-  text-decoration: underline; }
+  text-decoration: underline;
+  background-color: #115DA9;
+  color: white; }
 
 .DBh3 {
   font-size: 1.5em; }
@@ -19,11 +32,13 @@
 .DBul {
   padding-left: 5%;
   display: inline;
-  float: left; }
+  float: left;
+  color: #115DA9; }
 
 .DBli:hover {
   font-size: 1.5em;
-  cursor: pointer; }
+  cursor: pointer;
+  color: #115DA9; }
 
 .DBimgContainer {
   float: right;

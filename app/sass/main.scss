@@ -1,3 +1,20 @@
+nav {
+	background-color: #115DA9;
+	height: 90px;
+
+	a {
+		color: white;
+	}
+	:hover {
+		color: #3D3D3A;
+	}
+}
+		.leftNav {
+			padding-left: 5%;
+		}
+
+
+
 .container{
   width: 75%;
   margin: 20px auto;
@@ -7,6 +24,8 @@
   height: 400px;
 }
 
+
+
 // Dashboard Styles
 // * {
 // 	border: 1px solid black;
@@ -15,6 +34,8 @@
 	text-align: center;
 	font-size: 3.5em;
 	text-decoration: underline;
+	background-color: #115DA9;
+	color: white;
 }
 
 .DBh3 {
@@ -29,12 +50,14 @@
 	padding-left: 5%;
 	display: inline;
 	float: left;
+	color: #115DA9;
 }
 
 
 .DBli:hover {
 	font-size: 1.5em;
 	cursor: pointer;
+	color: #115DA9
 }
 
 .DBimgContainer {
@@ -47,6 +70,7 @@
 .DBImg {
 	border-radius: 2.5%;
 }
+
 
 // img source
 // http://www.internetbookselling.com/images/iStock_000014235423XSmall_Google_Map.jpg
