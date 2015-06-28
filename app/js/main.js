@@ -49,7 +49,7 @@
     })
 
 
-    .when('/trips', {
+    .when('/trips/:trip_id/locations', {
 
       templateUrl: 'js/rProvider/destination/destination.tpl.html',
       controller: 'Destination'
