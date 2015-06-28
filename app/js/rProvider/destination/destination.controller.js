@@ -4,9 +4,11 @@
 
   angular.module('rProvider')
 
-  .controller('Destination', ['$scope', '$http', 'HEROKU', 'UserService',
+  .controller('Destination', ['$scope', '$http', 'HEROKU', 'UserService','$routeParams',
 
-    function ($scope, $http, HEROKU, UserService) {
+    function ($scope, $http, HEROKU, UserService, $routeParams) {
+
+    var idfinder = (HEROKU.URL + 'trips/'+ $routeParams.trip_id +'/locations');
 
     UserService.tokenizeHeader();
 
@@ -19,7 +21,7 @@
       };
 
       $scope.destination =function (data) {
-        $http.post(HEROKU.URL + 'trips/:trip_id/locations', data)
+        $http.post(idfinder, data, HEROKU.CONFIG)
         .success( function (){
           $scope.destination = {};
         });
