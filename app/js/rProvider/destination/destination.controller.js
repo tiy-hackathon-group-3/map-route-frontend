@@ -8,7 +8,8 @@
 
     function ($scope, $http, HEROKU, UserService) {
 
-      UserService.tokenizeHeader();
+    UserService.tokenizeHeader();
+
 
       var Destination = function (options){
         this.street = options.street;
@@ -18,7 +19,7 @@
       };
 
       $scope.destination =function (data) {
-        $http.post(HEROKU.URL + 'users/destination', data);
+        $http.post(HEROKU.URL + 'trips/:trip_id/locations', data);
         // .success( function (){
           // run after promise
         // });
