@@ -30,7 +30,7 @@
       var points = [];
       var waypoint = [];
 
-      $http.get(HEROKU.URL + '/trips/15/locations', HEROKU.CONFIG)
+      $http.get(HEROKU.URL + '/trips/16/locations', HEROKU.CONFIG)
         .success( function(data){
           $scope.list = data;
           data.forEach( function (results){
