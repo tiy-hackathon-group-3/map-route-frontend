@@ -4,9 +4,10 @@
 
   angular.module('rProvider')
 
-  .service('UserService', [ '$location', 'HEROKU',
+  .service('UserService', [ '$location', 'HEROKU', '$http', '$routeParams',
+    function ($location, HEROKU, $http, $routeParams) {
 
-    function ($location, HEROKU) {
+      var endpoint = HEROKU.URL + 'trips/';
 
       this.tokenizeHeader = function (){
 
@@ -19,6 +20,10 @@
         console.log('Hello from User Service');
         }
 
+      };
+
+      this.getId = function (id) {
+        $http.get(endpoint + id + '/optimize', HEROKU.CONFIG);
       };
 
     }

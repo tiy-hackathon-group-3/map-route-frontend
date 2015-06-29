@@ -7,9 +7,18 @@
   .controller('Mapped', ['$scope' , 'UserService', '$http', 'HEROKU', '$routeParams',
     function ($scope, UserService, $http, HEROKU, $routeParams) {
 
-      var endpoint = (HEROKU.URL + '/trips/' + $routeParams + '/locations');
-
       UserService.tokenizeHeader();
+
+      var endpoint = HEROKU.URL + '/trips/' + $routeParams + '/locations';
+
+      var id = $routeParams.id;
+
+      UserService.getId(id).success( function (data) {
+        $scope.trips = data;
+        console.log(data);
+      });
+
+
 
       // Sets default map lat and lng to a cool place in Atlanta
 
