@@ -4,9 +4,10 @@
 
   angular.module('rProvider')
 
-  .controller('Mapped', ['$scope' , 'UserService', '$http', 'HEROKU',
-    function ($scope, UserService, $http, HEROKU) {
+  .controller('Mapped', ['$scope' , 'UserService', '$http', 'HEROKU', '$routeParams',
+    function ($scope, UserService, $http, HEROKU, $routeParams) {
 
+      var endpoint = (HEROKU.URL + '/trips/' + $routeParams + '/locations');
 
       UserService.tokenizeHeader();
 
@@ -30,7 +31,7 @@
       var points = [];
       var waypoint = [];
 
-      $http.get(HEROKU.URL + '/trips/16/locations', HEROKU.CONFIG)
+      $http.get(HEROKU.URL + endpoint , HEROKU.CONFIG)
         .success( function(data){
           $scope.list = data;
           data.forEach( function (results){
